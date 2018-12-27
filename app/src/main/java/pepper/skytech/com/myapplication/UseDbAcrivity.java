@@ -3,6 +3,7 @@ package pepper.skytech.com.myapplication;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -18,6 +19,7 @@ import pepper.skytech.com.myapplication.helper.DbHelper;
 import pepper.skytech.com.myapplication.model.FaceUserName;
 
 public class UseDbAcrivity extends AppCompatActivity {
+    private static final String TAG = "UseDbAcrivity";
 
     private FaceUserNameDao faceUserNameDao;
     private FaceUserName faceUserName;
@@ -46,6 +48,7 @@ public class UseDbAcrivity extends AppCompatActivity {
 
     private void initDbDao() {
         faceUserNameDao = DbHelper.getDaoSession(this).getFaceUserNameDao();
+        Log.d(TAG, "initDbDao: getTableModel");
     }
 
 
