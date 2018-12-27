@@ -13,7 +13,7 @@ public class FaceUserName {
 
         private String user_name;
 
-        private String pinyin_name;
+        private String pinyin_name;//表新加字段
 
         @Generated(hash = 1560052259)
         public FaceUserName(Long id, String face_id, String user_name,
