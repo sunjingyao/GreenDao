@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_face_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="300dp"
+        android:hint="请输入face_id"
+        android:background="#efefef"
+        android:padding="10dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/et_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="300dp"
+        android:hint="请输入name"
+        android:background="#efefef"
+        android:padding="10dp"
+        android:textColor="@color/colorPrimary"/>
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="插入"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:textColor="@color/colorPrimary"
+        android:onClick="insert"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/et_query_by_face_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请输入face_id进行查询"
+        android:width="300dp"
+        android:background="#efefef"
+        android:padding="10dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查询"
+        android:padding="10dp"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorPrimary"
+        android:onClick="query"/>
+
+
+    <TextView
+        android:id="@+id/tv_query_result"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#efefef"
+        android:width="300dp"
+        android:textColor="@color/colorPrimary"
+        android:hint="显示的查询结果"/>
+
+
+
+
+
+</LinearLayout>
